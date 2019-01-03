@@ -1,0 +1,13 @@
+Package: trendchange
+Type: Package
+Title: Trend Analysis Using Innovative Trend Analysis Method and Change Point Analysis Using Seqential Mann-Kendall Plot and Distribution Free Cumulative Sum Plot
+Version: 0.1.0
+Author: person("Sandeep Kumar", "Patakamuri", email = "sandeep.patakamuri@gmail.com", role = c("aut", "cre"))
+Maintainer: Sandeep Kumar Patakamuri <sandeep.patakamuri@gmail.com>
+Description: This package consist of Innovative Tred Analysis method proposed by Zekâi Şen (2012) to interpret trends in time series data. Change point analysis methods namely Sequential Mann-Kendall test (Sneyers 1990) and Distribution free CUSUM test (Grayson, R.B. et.al, 1996) were also impemented.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+Suggests: testthat, knitr, rmarkdown,covr
