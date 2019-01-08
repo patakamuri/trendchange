@@ -1,6 +1,6 @@
 #' @title Distribution Free CUSUM Test
 #'
-#' @description Disribution free CUSUM test is used to identify the change point in a series of data.
+#' @description Distribution free CUSUM test is used to identify the change point in a series of data.
 #'
 #' @importFrom  graphics abline legend lines plot
 #'
@@ -24,7 +24,7 @@
 #'
 #' @references Grayson, R.B., Argent, R.M., Nathan, R.J., McMahon, T.A. and Mein, R., 1996 Hydrological Recipes: Estimation Techniques in Australian Hydrology. Cooperative Research Centre for Catchment Hydrology, Australia, 125 pp.
 #'
-#' @details The point at which Maximum value of cumulative sum occurs, will indicate the change point in the time series. If the maximum value is equal to or greater than the critical value, it indicates significantce of the change point.
+#' @details The point at which Maximum value of cumulative sum occurs, will indicate the change point in the time series. If the maximum value is equal to or greater than the critical value, it indicates significance of the change point.
 #'
 #' @examples x<-c(Nile)
 #' dfcusum(x,1871)
@@ -56,6 +56,7 @@ dfcusum<-function(x, startyear = 1) {
   #Generating distribution free CUSUM plot
   vts <- ts(v, frequency = 1,start = c(startyear, 1))
   plot.ts(vts,type = "l", lty = 1, pch = 2, xlab = "Year", ylab = "CUSUM Values", main = "Distribution free CUSUM plot")
+  legend("bottomright",legend=c("CUSUM Plot"),lty = 1, box.lty = 1)
 
   return(list("CUMSUM Values" = v, "Maximum CUMSUM value" = vmax, "Critical value at 90% CI" = cv90, "Critical value at 95% CI" = cv95, "Critical value at 99% CI" = cv99))
 }

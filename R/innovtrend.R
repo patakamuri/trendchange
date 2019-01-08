@@ -51,7 +51,7 @@ innovtrend <-  function(x) {
 
   abline(a=0,b=1, lty = 1, lwd = 1)->nt
 
-  legend("bottomright",legend=c("No Trend"),pch=c(NA,NA,NA),lty = 1, box.lty = 1)
+  legend("bottomright",legend=c("No Trend (1:1) line"),lty = 1, box.lty = 1)
 
   }
 

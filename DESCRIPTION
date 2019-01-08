@@ -4,10 +4,9 @@ Title: Trend Analysis Using Innovative Trend Analysis Method and Change Point An
 Version: 0.1.0
 Author: Sandeep Kumar Patakamuri <sandeep.patakamuri@gmail.com>
 Maintainer: Sandeep Kumar Patakamuri <sandeep.patakamuri@gmail.com>
-Description: This package consist of Innovative Tred Analysis method proposed by Zekâi Şen (2012) to interpret trends in time series data. Change point analysis methods namely Sequential Mann-Kendall test (Sneyers 1990) and Distribution free CUSUM test (Grayson, R.B. et.al, 1996) were also impemented.
+Description: Innovative Trend Analysis is a graphical method to examine the trends in time series data. Sequential Mann-Kendall test uses the intersection of prograde and retrograde series to indicate the possible change point in time series data. Distribution free cumulative sum charts indicate location and significance of the change point in time series.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-VignetteBuilder: knitr
 RoxygenNote: 6.0.1
 Suggests: testthat, knitr, rmarkdown,covr

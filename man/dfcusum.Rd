@@ -23,10 +23,10 @@ Maximum CUMSUM Value  - Absolute Maximum value in cumulative sum series
 99 percent CI - Critical value at 99 percent Confidence Interval (1.63*sqrt(n))
 }
 \description{
-Disribution free CUSUM test is used to identify the change point in a series of data.
+Distribution free CUSUM test is used to identify the change point in a series of data.
 }
 \details{
-The point at which Maximum value of cumulative sum occurs, will indicate the change point in the time series. If the maximum value is equal to or greater than the critical value, it indicates significantce of the change point.
+The point at which Maximum value of cumulative sum occurs, will indicate the change point in the time series. If the maximum value is equal to or greater than the critical value, it indicates significance of the change point.
 }
 \examples{
 x<-c(Nile)

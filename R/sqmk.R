@@ -85,7 +85,7 @@ sqmk<-function(x, startyear = 1) {
   lines(retrograde, type = "l", lty = 2)
   abline(h = -1.96, lty=3)
   abline(h = 1.96, lty=3)
-  legend("bottomright",legend=c("Prograde","Retrograde","95% CI"),pch=c(NA,NA,NA),lty=c(1,2,3),box.lty = 1, horiz = T)
+  legend("bottomright",legend=c("Prograde","Retrograde","95% CI"),lty=c(1,2,3),box.lty = 1, horiz = T)
 
   return(list("Prograde-Series" = prog1, "Retrograde-Series" = retr1, "Intersection" = ip))
 
