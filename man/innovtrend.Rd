@@ -4,10 +4,24 @@
 \alias{innovtrend}
 \title{Innovative Trend Analysis}
 \usage{
-innovtrend(x)
+innovtrend(x,ci = 95)
 }
 \arguments{
 \item{x}{- Time series data vector}
+
+\item{ci}{- Confidence Interval}
+}
+\value{
+S   - Slope of the trend
+ssd     - Slope Standard deviation
+correl  - Correlation
+D  - Trend indicator
+CLlower90  - Lower Cofidence Limit at 90 percent
+CLupper90  - Uppler Cofidence Limit at 90 percent
+CLlower95  - Lower Cofidence Limit at 95 percent
+CLupper95  - Uppler Cofidence Limit at 95 percent
+CLlower99  - Lower Cofidence Limit at 99 percent
+CLupper99  - Uppler Cofidence Limit at 99 percent
 }
 \description{
 Innovative trend analysis method proposed by Zekai Sen (2011) is implemented in this function.
@@ -17,7 +31,7 @@ If the data points lay on 1:1 line, there is no trend in the data. If the data p
 }
 \examples{
 x<-c(Nile)
-innovtrend(x)
+innovtrend(x,ci= 95)
 
 }
 \references{
